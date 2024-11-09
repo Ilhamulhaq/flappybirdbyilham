@@ -3,23 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy Bird by ilham ul haq</title>
+    <title>Flappy Bird Game</title>
     <link rel="stylesheet" href="flappybird.css">
 </head>
 <body>
-    <canvas id="gameCanvas" width="400" height="600"></canvas>
-    <div id="gameOverlay" class="hidden">
-        <div id="gameOverMessage">Game Over!</div>
-        <button id="retryButton">Retry</button>
-        <div id="score">Score: 0</div>
-        <p>BY ILHAM UL HAQ</p>
-    </div>
-    <div id="startScreen">
-        <div id="startMessage">Click to Start</div>
-        <button id="startButton">Start</button>
-        <p>BY ILHAM UL HAQ</p>
-    </div>
-    <script src="script.js"></script>
+    <header>
+        <h1>Flappy Bird</h1>
+        <div class="score-container">
+            <div id="bestScore"></div>
+            <div id="currentScore"></div>
+        </div>
+    </header>
+    <canvas id="canvas" width="431" height="665"></canvas>
     <script src="flappybird.js"></script>
 </body>
 </html>
